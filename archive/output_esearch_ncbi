@@ -1,0 +1,115 @@
+$ esearch -db assembly -query ${i} | esummary 
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DocumentSummarySet>
+<DocumentSummarySet status="OK">
+  <DbBuild>Build240811-1025.1</DbBuild>
+  <DocumentSummary>
+    <Id>862971</Id>
+    <RsUid>3906078</RsUid>
+    <GbUid>3631268</GbUid>
+    <AssemblyAccession>GCF_900099655.1</AssemblyAccession>
+    <LastMajorReleaseAccession>GCF_900099655.1</LastMajorReleaseAccession>
+    <ChainId>900099655</ChainId>
+    <AssemblyName>IMG-taxon 2617270782 annotated assembly</AssemblyName>
+    <Taxid>459472</Taxid>
+    <Organism>Planococcus glaciei (firmicutes)</Organism>
+    <SpeciesTaxid>459472</SpeciesTaxid>
+    <SpeciesName>Planococcus glaciei</SpeciesName>
+    <AssemblyType>haploid</AssemblyType>
+    <AssemblyStatus>Scaffold</AssemblyStatus>
+    <AssemblyStatusSort>6</AssemblyStatusSort>
+    <WGS>FNDC01</WGS>
+    <GB_BioProjects>
+      <Bioproj>
+        <BioprojectAccn>PRJEB15923</BioprojectAccn>
+        <BioprojectId>348262</BioprojectId>
+      </Bioproj>
+    </GB_BioProjects>
+    <RS_BioProjects>
+      <Bioproj>
+        <BioprojectAccn>PRJNA224116</BioprojectAccn>
+        <BioprojectId>224116</BioprojectId>
+      </Bioproj>
+    </RS_BioProjects>
+    <BioSampleAccn>SAMN04487975</BioSampleAccn>
+    <BioSampleId>4487975</BioSampleId>
+    <Biosource>
+      <InfraspeciesList>
+        <Infraspecie>
+          <Sub_type>strain</Sub_type>
+          <Sub_value>CGMCC 1.6846</Sub_value>
+        </Infraspecie>
+      </InfraspeciesList>
+    </Biosource>
+    <Coverage>295</Coverage>
+    <PartialGenomeRepresentation>false</PartialGenomeRepresentation>
+    <Primary>3906068</Primary>
+    <ReleaseLevel>Major</ReleaseLevel>
+    <ReleaseType>Major</ReleaseType>
+    <AsmReleaseDate_GenBank>2016/10/27 00:00</AsmReleaseDate_GenBank>
+    <AsmReleaseDate_RefSeq>2016/12/22 00:00</AsmReleaseDate_RefSeq>
+    <SeqReleaseDate>2016/10/21 00:00</SeqReleaseDate>
+    <AsmUpdateDate>2016/12/22 00:00</AsmUpdateDate>
+    <SubmissionDate>2016/10/21 00:00</SubmissionDate>
+    <LastUpdateDate>2016/12/22 00:00</LastUpdateDate>
+    <SubmitterOrganization>DOE - JOINT GENOME INSTITUTE</SubmitterOrganization>
+    <RefSeq_category>na</RefSeq_category>
+    <PropertyList>
+      <string>from-type</string>
+      <string>full-genome-representation</string>
+      <string>genbank_has_annotation</string>
+      <string>has_annotation</string>
+      <string>latest</string>
+      <string>latest_genbank</string>
+      <string>latest_refseq</string>
+      <string>refseq_has_annotation</string>
+      <string>wgs</string>
+    </PropertyList>
+    <FromType>assembly from type material</FromType>
+    <Synonym>
+      <Genbank>GCA_900099655.1</Genbank>
+      <RefSeq>GCF_900099655.1</RefSeq>
+      <Similarity>identical</Similarity>
+    </Synonym>
+    <ContigN50>196955</ContigN50>
+    <ScaffoldN50>198901</ScaffoldN50>
+    <FtpPath_GenBank>ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/099/655/GCA_900099655.1_IMG-taxon_2617270782_annotated_assembly</FtpPath_GenBank>
+    <FtpPath_RefSeq>ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/099/655/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly</FtpPath_RefSeq>
+    <FtpPath_Assembly_rpt>ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/099/655/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly_assembly_report.txt</FtpPath_Assembly_rpt>
+    <FtpPath_Stats_rpt>ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/099/655/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly_assembly_stats.txt</FtpPath_Stats_rpt>
+    <Busco>
+      <TotalCount>0</TotalCount>
+    </Busco>
+    <SortOrder>5C6TAA9F9998030449000996559898</SortOrder>
+    <Meta>
+      <Stats>
+        <Stat category="alt_loci_count" sequence_tag="all">0</Stat>
+        <Stat category="chromosome_count" sequence_tag="all">0</Stat>
+        <Stat category="contig_count" sequence_tag="all">34</Stat>
+        <Stat category="contig_l50" sequence_tag="all">6</Stat>
+        <Stat category="contig_n50" sequence_tag="all">196955</Stat>
+        <Stat category="non_chromosome_replicon_count" sequence_tag="all">0</Stat>
+        <Stat category="replicon_count" sequence_tag="all">0</Stat>
+        <Stat category="scaffold_count" sequence_tag="all">33</Stat>
+        <Stat category="scaffold_count" sequence_tag="placed">0</Stat>
+        <Stat category="scaffold_count" sequence_tag="unlocalized">0</Stat>
+        <Stat category="scaffold_count" sequence_tag="unplaced">33</Stat>
+        <Stat category="scaffold_l50" sequence_tag="all">6</Stat>
+        <Stat category="scaffold_n50" sequence_tag="all">198901</Stat>
+        <Stat category="total_length" sequence_tag="all">3917616</Stat>
+        <Stat category="ungapped_length" sequence_tag="all">3917161</Stat>
+      </Stats>
+      <FtpSites>
+        <FtpPath type="Assembly_rpt">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/099/655/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly_assembly_report.txt</FtpPath>
+        <FtpPath type="GenBank">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/099/655/GCA_900099655.1_IMG-taxon_2617270782_annotated_assembly</FtpPath>
+        <FtpPath type="RefSeq">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/099/655/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly</FtpPath>
+        <FtpPath type="Stats_rpt">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/099/655/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly/GCF_900099655.1_IMG-taxon_2617270782_annotated_assembly_assembly_stats.txt</FtpPath>
+      </FtpSites>
+      <assembly-level>8</assembly-level>
+      <assembly-status>Scaffold</assembly-status>
+      <representative-status>na</representative-status>
+      <submitter-organization>DOE - JOINT GENOME INSTITUTE</submitter-organization>
+      <taxonomy-check-status>OK</taxonomy-check-status>
+    </Meta>
+  </DocumentSummary>
+</DocumentSummarySet>
