@@ -3,7 +3,7 @@
 
 ## EvANI benchmarking pipeline
 
-This repo 
+This repo include scripts for benchmarking ANI tools.
 
 
 
@@ -18,4 +18,9 @@ A diverse range of datasets are provided on [Zenodo](https://zenodo.org/records/
 For real data we used the GTDB tree
 https://data.gtdb.ecogenomic.org/releases/release202/202.0/ 
 
+We downloaded the genomes using esearch
+
+```
+wget  `esearch -db assembly -query ${i} | esummary | xtract -pattern DocumentSummary -element FtpPath_GenBank | awk -F"/" '{print $0"/"$NF"_genomic.fna.gz"}'`  -O ${i}.fna.gz 
+```
 
