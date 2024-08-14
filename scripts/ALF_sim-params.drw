@@ -24,9 +24,16 @@ minGeneLength := 10;
 gammaLengthDist := [2.4, 133.8];
 blocksize := 3:
 
+
 # parameters concerning the species tree
-treeType := 'Custom';
-treeFile := getenv('R2T_BASE').'/tree_'.uuid.'.nwk'; # change path to tree file here
+#treeType := 'BDTree';
+#birthRate := 0.01;
+#deathRate := 0.001;
+#NSpecies := 15;
+#ultrametric := false;
+#mutRate := murate;
+#scaleTree := true;
+
 
 # parameters concerning the substitution models
 substModels := [SubstitutionModel('CPAM')];
@@ -35,3 +42,23 @@ rateVarModels := [RateVarModel(Gamma, 5, 0.01, 1)];
 modelAssignments := [1]:
 modelSwitchS := [[1]]:
 modelSwitchD := [[1]]:
+
+
+# parameters concerning gene duplication
+geneDuplRate := 0.0005;
+numberDupl := 5;
+transDupl := 0;
+fissionDupl := 0;
+fusionDupl := 0;
+P_pseudogene := 0;
+P_neofunc := 0;
+P_subfunc := 0;
+
+
+
+# parameters concerning LGT
+lgtRate := dp;
+orthRep := 0;
+lgtGRate := 0.00005;
+lgtGSize := 10;
+
