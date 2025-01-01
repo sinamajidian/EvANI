@@ -54,9 +54,8 @@ plt.ylabel("Statistic", fontsize=18) # Log P-value Statistic | whole genome with
 ax.set_xticks(range(5,33))
 plt.xlabel("k", fontsize=18) 
 plt.title("Spearman: Dashing-FullKhash vs GTDB Distance tree  |"+dataset_) # #  SynechococcalesDistance tree | GC < 0.48 38 out of 81 species (CDS >4.5Mbp) 
-# genome NCBI (67 out of 81 species with GC >0.38) #  | removing outlier of uniq-11mers (72 out of 81)
+
 plt.show() 
-# genomes_ncbi
 
 
 

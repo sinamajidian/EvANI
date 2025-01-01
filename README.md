@@ -1,9 +1,72 @@
 # EvANI
 
 
+
+This reposiotry includes the instruction how to run EvANI EvANI benchmarking pipeline on benchmarking datasets. 
+
+
+### requirements
+EvANI framework is a basic python script which performs a Spearman rank correlation test. 
+
+```
+conda create -n evani python=3.12
+conda activate evani
+
+conda install conda-forge::ete3
+conda install conda-forge::seaborn
+conda install conda-forge::matplotlib
+```
+The package ete3 is used to parse phylogenetic trees and calcualte tree distances. 
+
+
+
 ## EvANI benchmarking pipeline
 
-This repo includes scripts for benchmarking ANI tools. We provided a [bash script] to run each tool (including k-mer-based: dashing, mash, [here](https://github.com/sinamajidian/EvANI/blob/main/scripts/kmer_tools.sh), fastANI, orthoANI,  ANIm [here](https://github.com/sinamajidian/EvANI/blob/main/scripts/ANI_tools.sh) on genomes in Fasta fromat. 
+
+### Step 1: download simualted dataset
+
+First, go to our [zenodo page](https://zenodo.org/records/14579845) and download the simulated dataset
+```
+Majidian, S., Hwang, S., Zakeri, M., & Langmead, B. (2024). Challenges for sketch-based estimation of evolutionary distance (v0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14579845
+
+```
+
+The dataset includes three evolutionary scenarios: 
+
+1. varying mutation rates including 5,10,25,50,100,
+2. varying duplication rates including 0.0000,0.0005, 0.0010, 0.0020, 
+3. varying rates of lateral gene transfer (LGT), also known as horizontal gene transfer (HGT) including 0.0001, 0.0005, 0.0010, 0.0020. Note that for lgt=0 you could use duplication=0 dataset.
+
+
+
+
+### Step 2: run your ANI tool 
+
+Run your ANI tool on the simulated datasets and report the results in a TSV file. 
+We provided a folder `sample_tool` including the output of a sample tool . 
+
+
+
+
+First, clone this github repo:
+
+```
+git clone git@github.com:sinamajidian/EvANI.git
+
+```
+
+
+
+
+This provides you with the python script and the precomputed simulated dataset
+
+
+
+
+
+
+
+the script for benchmarking ANI tools. We provided a [bash script] to run each tool (including k-mer-based: dashing, mash, [here](https://github.com/sinamajidian/EvANI/blob/main/scripts/kmer_tools.sh), fastANI, orthoANI,  ANIm [here](https://github.com/sinamajidian/EvANI/blob/main/scripts/ANI_tools.sh) on genomes in Fasta fromat. 
 
 The output of each tool is paresed in python using this [piece](https://github.com/sinamajidian/EvANI/blob/main/scripts/ani_parser.py). We compared the genomic distance found by each tool with the true distance on the phylogenetic tree using [this code](https://github.com/sinamajidian/EvANI/blob/main/scripts/rank_correlation_test.py) and visualized the results using seabron.
 

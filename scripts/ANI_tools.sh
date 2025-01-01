@@ -53,3 +53,6 @@ java -jar ${oat} -blastplus_dir ${blastbin}  -num_threads  15 -fasta1 fasta/${qu
 
 done
 done
+
+
+
