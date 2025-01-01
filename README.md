@@ -27,8 +27,8 @@ The package ete3 is used to parse phylogenetic trees and calculate tree distance
 
 First, go to our [zenodo page](https://zenodo.org/records/14579845) and download the simulated dataset
 ```
-Majidian, S., Hwang, S., Zakeri, M., & Langmead, B. (2024). Challenges for sketch-based estimation of evolutionary distance (v0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14579845
-
+Majidian, S., Hwang, S., Zakeri, M., & Langmead, B. (2024). Challenges for sketch-based estimation of evolutionary distance (v0.2.0) [Data set]. 
+Zenodo. https://doi.org/10.5281/zenodo.14579845
 ```
 
 The dataset includes three evolutionary scenarios: 
@@ -45,11 +45,11 @@ For each stud/rate, there are five replicates of evolution simulation. Each case
 Run your ANI tool on the simulated datasets and report the results in TSV files. The format of the file name is `study_rate_replicate.tsv`  e.g. `duplication_0.0005_2.tsv`. 
 We provided a folder `sample_tool` including the outputs of a sample tool. 
 
+(if you just want to try the benchmarking pipleline on the provided test data, see step 3).
 
 
 
-
-### Step 2: run EvANI benchmarking 
+### Step 3: run EvANI benchmarking  (test example)
 First, clone this github repo:
 
 ```
@@ -58,15 +58,27 @@ git clone git@github.com:sinamajidian/EvANI.git
 ```
 
 This provides you with the python script and the precomputed simulated dataset. Make sure you have installed the requirements.
-The code has two positional arguments: the folder name where the TSV files of ANI values are stored, and one of the studies `duplication`, `mutation` or `lgt`. 
 
 
-Now run it as 
+Make sure you are in the correct folder where you see at least the folowing file and folders
+```
+cd EvANI
+$ ls 
+EvANI.py  precomputed_distances sample_tool  trees
+```
+
+
+The python code `EvANI.py` needs two positional arguments: the folder name `sample_tool` where the TSV files of ANI values are stored, and one of the studies `duplication`, `mutation` or `lgt`. Now run it as  
+
 
 ```
 python EvANI.py sample_tool mutation
 
 ```
+
+
+For a test of the script, you can run the same command line  `python EvANI.py sample_tool mutation`  using files in this repo without running your tools. 
+
 
 This will output two figures in PDF, one for log p-values and one for statistics versus the rates.  For the sample_tool, the output will be 
 
