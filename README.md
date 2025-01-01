@@ -76,6 +76,7 @@ This will output two figures in PDF, one for log p-values and one for statistics
 </div>
 
 
+Sample tool here is [FastANI](https://github.com/ParBLiSS/FastANI) with Min Fraction of genome shared =0.1 and fragment length =3000.
 
 
 
