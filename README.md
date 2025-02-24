@@ -1,8 +1,14 @@
 # EvANI
 
 
-
 This repository includes the instructions how to run EvANI benchmarking pipeline on the benchmarking datasets. 
+
+# Preprint
+```
+S. Majidian, , S. Hwang, M. Zakeri, & B. Langmead, (2025)
+Challenges for sketch-based estimation of evolutionary distance
+https://www.biorxiv.org/content/10.1101/2025.02.23.639716
+```
 
 
 ### requirements
@@ -26,10 +32,7 @@ The package ete3 is used to parse phylogenetic trees and calculate tree distance
 ### Step 1: download simulated dataset
 
 First, go to our [zenodo page](https://zenodo.org/records/14579845) and download the simulated dataset
-```
-Majidian, S., Hwang, S., Zakeri, M., & Langmead, B. (2024). Challenges for sketch-based estimation of evolutionary distance (v0.2.0) [Data set]. 
-Zenodo. https://doi.org/10.5281/zenodo.14579845
-```
+
 
 The dataset includes three evolutionary scenarios: 
 
