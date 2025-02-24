@@ -3,10 +3,10 @@
 
 This repository includes the instructions how to run EvANI benchmarking pipeline on the benchmarking datasets. 
 
-# Preprint
+## Preprint
 ```
 S. Majidian, , S. Hwang, M. Zakeri, & B. Langmead, (2025)
-Challenges for sketch-based estimation of evolutionary distance
+EvANI benchmarking workflow for evolutionary distance estimation
 https://www.biorxiv.org/content/10.1101/2025.02.23.639716
 ```
 
