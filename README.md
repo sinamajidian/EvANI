@@ -112,9 +112,9 @@ wget  `esearch -db assembly -query ${i} | esummary | xtract -pattern DocumentSum
 A fast alternative is to use `datasets` package after installing with pip install datasets or `conda install conda-forge::ncbi-datasets-cli`.
 ```
 echo "GCA_017999835.1" > acc.txt
-$ datasets download genome accession --inputfile acc.txt --dehydrated
-$ unzip ncbi_dataset.zip
-$ datasets rehydrate --directory .
+datasets download genome accession --inputfile acc.txt --dehydrated
+unzip ncbi_dataset.zip
+datasets rehydrate --directory .
 ```
 
 For real data we used the GTDB tree, available [here](https://data.gtdb.ecogenomic.org/releases/release202/202.0/). 
