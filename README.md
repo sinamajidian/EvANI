@@ -109,6 +109,13 @@ The bash script includes command line to download the NCBI genomes using esearch
 ```
 wget  `esearch -db assembly -query ${i} | esummary | xtract -pattern DocumentSummary -element FtpPath_GenBank | awk -F"/" '{print $0"/"$NF"_genomic.fna.gz"}'`  -O ${i}.fna.gz 
 ```
+A fast alternative is to use `datasets` package after installing with pip install datasets or `conda install conda-forge::ncbi-datasets-cli`.
+```
+echo "GCA_017999835.1" > acc.txt
+$ datasets download genome accession --inputfile acc.txt --dehydrated
+$ unzip ncbi_dataset.zip
+$ datasets rehydrate --directory .
+```
 
 For real data we used the GTDB tree, available [here](https://data.gtdb.ecogenomic.org/releases/release202/202.0/). 
 
